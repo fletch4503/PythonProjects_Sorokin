@@ -16,5 +16,7 @@ if __name__ == '__main__':
 #    print(fact_iter(5))
 #    print(fact(5))
 #    print(fact_iter(5))
+#    timing = []
+#    start = time.time()
 #    for test_value in range(5000):
 #        fact(test_value)
