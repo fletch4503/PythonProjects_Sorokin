@@ -1,5 +1,5 @@
 # add -Xfrozen_modules=off into configuration param
-
+# Add to config
 class Person:
 
     # конструктор
