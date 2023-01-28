@@ -1,14 +1,23 @@
+"""
+Connect to database
+"""
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
-import MySQLdb
 
-conn = MySQLdb.connect(
-      host="rc1b-no79rbf5nj9c81i3.mdb.yandexcloud.net",
+# for macOS
+# import MySQLdb
+
+# For Windows
+import mysql.connector
+
+
+conn = mysql.connector.connect(
+      host="37.46.131.241",
       port=3306,
-      db="fletch_db1",
+      db="yc_project",
       user="fletch4503",
-      passwd="Manta_50174416",
-      ssl={'ca': '~/.mysql/root.crt'})
+      passwd="Manta_50174416")
+#      ssl={'ca': '~/.mysql/root.crt'})
 
 cur = conn.cursor()
 cur.execute('SELECT version()')
