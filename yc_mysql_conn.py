@@ -1,15 +1,11 @@
 """
-Connect to database
+Connect to database on the host 37.46.131.241
 """
 # !/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# for macOS
-# import MySQLdb
-
-# For Windows
+#  Надо посмотреть использование модуля MySQL
 import mysql.connector
-
 
 conn = mysql.connector.connect(
       host="37.46.131.241",
